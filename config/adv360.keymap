@@ -29,28 +29,9 @@
         tapping-term-ms = <200>;
         quick_tap_ms = <175>;
         flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>; 
+        bindings = <&kp>, <&kp>;
     };
-        
-    lt_gt: lt_gt {
-      compatible = "zmk,behavior-mod-morph";
-      label = "LT_GT";
-      #binding-cells = <0>;
-      bindings = <&kp LT>, <&kp GT>;
-      mods = <(MOD_LSFT | MOD_RSFT)>;
-    };
-    
-    lt_gt_pipe: lt_gt_pipe {
-      compatible = "zmk,behavior-mod-morph";
-      label = "LT_GT_PIPE";
-      #binding-cells = <0>;
-      bindings = <&lt_gt>, <&kp PIPE>;
-      mods = <MOD_RALT>;
-    };
-    
   };
-  
-};
 
     keymap {
         compatible = "zmk,keymap";
@@ -58,11 +39,11 @@
 
         default_layer {
             bindings = <
-   &kp ESC     &kp N1         &kp N2    &kp N3     &kp N4  &kp N5                  &tog 1                                                                          &mo 3  &kp N6  &kp N7     &kp N8         &kp N9    &kp N0         &kp MINUS
-   &kp TAB      &kp Q          &kp W     &kp E      &kp R   &kp T                   &none                                                                &kp PRINTSCREEN   &kp Y   &kp U      &kp I          &kp O     &kp P  &kp LEFT_BRACKET
- &kp EQUAL      &kp A          &kp S     &kp D      &kp F   &kp G            &kp CAPSLOCK  &kp LCTRL  &kp LALT   &none   &none  &kp LEFT_WIN  &kp RCTRL         &kp RALT   &kp H   &kp J      &kp K          &kp L  &kp SEMI           &kp SQT
- &kp LSHFT      &kp Z          &kp X     &kp C      &kp V   &kp B                   &none      &none  &kp HOME   &none   &none     &kp PG_UP      &none            &none   &kp N   &kp M  &kp COMMA        &kp DOT  &kp FSLH         &kp RSHFT
-     &mo 2  &kp GRAVE  &kp LESS_THAN  &kp LEFT  &kp RIGHT                        &kp BSPC    &kp DEL   &kp END                     &kp PG_DN  &kp ENTER        &kp SPACE          &kp UP   &kp DOWN  &kp BACKSLASH  &kp RBKT             &mo 2
+   &kp ESC     &kp N1                &kp N2    &kp N3     &kp N4  &kp N5                  &tog 1                                                                          &mo 3  &kp N6  &kp N7     &kp N8         &kp N9    &kp N0         &kp MINUS
+   &kp TAB      &kp Q                 &kp W     &kp E      &kp R   &kp T                   &none                                                                &kp PRINTSCREEN   &kp Y   &kp U      &kp I          &kp O     &kp P  &kp LEFT_BRACKET
+ &kp EQUAL      &kp A                 &kp S     &kp D      &kp F   &kp G            &kp CAPSLOCK  &kp LCTRL  &kp LALT   &none   &none  &kp LEFT_WIN  &kp RCTRL         &kp RALT   &kp H   &kp J      &kp K          &kp L  &kp SEMI           &kp SQT
+ &kp LSHFT      &kp Z                 &kp X     &kp C      &kp V   &kp B                   &none      &none  &kp HOME   &none   &none     &kp PG_UP      &none            &none   &kp N   &kp M  &kp COMMA        &kp DOT  &kp FSLH         &kp RSHFT
+     &mo 2  &kp GRAVE  &kp NON_US_BACKSLASH  &kp LEFT  &kp RIGHT                        &kp BSPC    &kp DEL   &kp END                     &kp PG_DN  &kp ENTER        &kp SPACE          &kp UP   &kp DOWN  &kp BACKSLASH  &kp RBKT             &mo 2
             >;
         };
 
