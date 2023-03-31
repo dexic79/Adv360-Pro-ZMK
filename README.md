@@ -1,5 +1,7 @@
 # ADV360-PRO-ZMK
 
+I have adopted the german keyboard layout from the Kinesis Advantage 2 keyboard. I had to map the Esc-key to the top left corner and move this button onto the former Caps Lock position. AltGr added to macro key (4), CapsLock to macro key (2), Print Screen to (3).
+
 ## To build Firmware in GitHub Actions
 
 ### Setup
