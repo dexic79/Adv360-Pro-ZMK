@@ -1,3 +1,9 @@
+macro_mfg: macro_mfg{
+compatible = "zmk,behavior-macro";
+label = "macro_mfg";
+#binding-cells = <0>;
+bindings = <&mt LEFT_SHIFT K>;
+};
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
 label = "macro_quotes";
