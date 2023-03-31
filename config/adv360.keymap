@@ -29,9 +29,28 @@
         tapping-term-ms = <200>;
         quick_tap_ms = <175>;
         flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
+        bindings = <&kp>, <&kp>; 
     };
+        
+    lt_gt: lt_gt {
+      compatible = "zmk,behavior-mod-morph";
+      label = "DE_LT_GT";
+      #binding-cells = <0>;
+      bindings = <&kp DE_LT>, <&kp DE_GT>;
+      mods = <(MOD_LSFT | MOD_RSFT)>;
+    };
+    
+    lt_gt_pipe: lt_gt_pipe {
+      compatible = "zmk,behavior-mod-morph";
+      label = "DE_LT_GT";
+      #binding-cells = <0>;
+      bindings = <&lt_gt>, <&kp DE_PIPE>;
+      mods = <MOD_RALT>;
+    };
+    
   };
+  
+};
 
     keymap {
         compatible = "zmk,keymap";
