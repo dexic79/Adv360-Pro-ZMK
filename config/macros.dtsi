@@ -2,7 +2,7 @@ macro_mfg: macro_mfg{
 compatible = "zmk,behavior-macro";
 label = "macro_mfg";
 #binding-cells = <0>;
-bindings = <&kp LEFT_SHIFT>, <&kp K>, <&kp I>, <&kp T>, <&kp SPACE>, <&kp F>, <&kp R>, <&kp E>, <&kp U>, <&kp N>, <&kp D>, <&kp L>, <&kp I>, <&kp C>, <&kp C>, <&kp H>, <&kp E>, <&kp N>, <&kp SPACE>, <&kp CAPSLOCK>, <&kp G>, <&kp CAPSLOCK>, <&kp R>, <&kp LEFT_BRACKET>, <&kp MINUS>, <&kp E>, <&kp N>, <&kp ENTER>, <&kp D>, <&kp E>, <&kp J>, <&kp A>, <&kp N>, <&kp SPACE>, <&kp S>, <&kp T>, <&kp O>, <&kp J>, <&kp I>, <&kp C>, <&kp E>, <&kp V>, <&kp I>, <&kp C>;
+bindings = <&kp CAPSLOCK>, <&kp M>, <&kp CAPSLOCK>, <&kp I>, <&kp T>, <&kp SPACE>, <&kp F>, <&kp R>, <&kp E>, <&kp U>, <&kp N>, <&kp D>, <&kp L>, <&kp I>, <&kp C>, <&kp H>, <&kp E>, <&kp N>, <&kp SPACE>, <&kp CAPSLOCK>, <&kp G>, <&kp CAPSLOCK>, <&kp R>, <&kp LEFT_BRACKET>, <&kp MINUS>, <&kp E>, <&kp N>, <&kp ENTER>, <&kp D>, <&kp E>, <&kp J>, <&kp A>, <&kp N>, <&kp SPACE>, <&kp CAPS>, <&kp S>, <&kp CAPS>, <&kp T>, <&kp O>, <&kp J>, <&kp I>, <&kp C>, <&kp E>, <&kp V>, <&kp I>, <&kp C>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
